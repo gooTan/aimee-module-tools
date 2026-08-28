@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "module": "tools",
+  "classification": "required",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server"
+  ],
+  "principal_class": 1,
+  "principal_ref": 11,
+  "stages": [
+    {
+      "id": 1,
+      "name": "tool-dispatch",
+      "event_kind": 6913
+    }
+  ],
+  "source_sha256": "dbc416a5262e85366b9edddc5332ba4cfeead68a006ca5fd65f538571bdb7ba4",
+  "owned_files": [
+    "src/modules/tools/module.yaml",
+    "src/modules/tools/agent_tools.c",
+    "src/modules/tools/agent_tools_anchored.c",
+    "src/modules/tools/agent_tools_completion.c",
+    "src/modules/tools/agent_tools_dispatch.c",
+    "src/modules/tools/module_adapter.c",
+    "src/modules/tools/agent_tools_internal.h",
+    "src/modules/tools/include/aimee/tools/agent_tools.h",
+    "src/modules/tools/include/aimee/tools/module_api.h",
+    "src/tests/test_tool_output_cap.c",
+    "docs/modules/tools.md",
+    "server-go/modules/tools/tools.go",
+    "server-go/modules/tools/tools_test.go"
+  ]
+}
